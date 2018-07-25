@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import MyAppBar from './MyAppBar';
 import LeftItems from './LeftItems';
-import ContentIndex from './ContentIndex';
+import EnhancedTable from './EnhancedTable';
 
 const drawerWidth = 200;
 
@@ -58,7 +58,7 @@ class ClippedDrawer extends Component {
         </Drawer>
         <main className={this.props.classes.content}>
           <div className={this.props.classes.toolbar} />
-          <ContentIndex showContent={this.state.showContent} />
+          <EnhancedTable />
         </main>
       </div>
     );
